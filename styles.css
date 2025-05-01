@@ -1,0 +1,101 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(120deg, #003366, #001f3f);
+    animation: oceanWave 20s infinite linear alternate;
+    background-size: 400% 400%;
+    line-height: 1.8;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Wavey Ocean Animation */
+@keyframes oceanWave {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #00aaff;
+}
+
+main {
+    max-width: 960px;
+    margin: auto;
+    padding: 2rem;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #e0f7ff;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    color: #cfefff;
+    font-size: 0.9rem;
+}
+.wave-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.15;
+}
+
+.wave {
+    width: 200%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/wavecut.png'); /* change to a better wave svg if needed */
+    background-size: cover;
+    animation: waveMove 20s linear infinite;
+}
+
+@keyframes waveMove {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-25%); }
+}
+
