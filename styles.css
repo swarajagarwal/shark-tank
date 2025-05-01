@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Libre Franklin', sans-serif;
-    color: #ffffff;
+    color: #000000;
     background: linear-gradient(120deg, #b4c7da, #64c1fa);
     animation: oceanWave 20s infinite linear alternate;
     background-size: 400% 400%;
