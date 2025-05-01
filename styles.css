@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.logo {
+    width: 400px;
+    height: auto;
+}
 
 body {
     font-family: 'Libre Franklin', sans-serif;
